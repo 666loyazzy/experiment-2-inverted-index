@@ -45,3 +45,23 @@ word<TAB><document01.txt,n1>;<document02.txt,n2>;<total,n1+n2>.
 语料采用Apache Hadoop 3.4.3的英文官方文档：Single Node Setup、Cluster Setup、HDFS Architecture、HDFS User Guide、File System Shell、MapReduce Tutorial、YARN Architecture、Hadoop Streaming、Hadoop Archives和Hadoop DistCp。文件名依次为`document01.txt`至`document10.txt`。详细来源见`sources.json`。
 
 Apache文档遵循其原有许可，见[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)。
+
+## 实际运行结果
+
+已在腾讯云上海Ubuntu 26.04服务器上使用JDK 11与Hadoop 3.4.3完成HDFS和YARN运行，共10个Map任务、1个Reduce任务，最终状态为SUCCEEDED。
+
+10篇文档共241502字节，分词38308次，过滤停词13785次，入索引24523次，得到3035个词项和6382条文档记录。完整结果见`results/index.txt`，独立校验记录见`results/verification.json`。
+
+```bash
+python3 verify.py corpus stopwords.txt results/index.txt
+```
+
+## 独立环境初始化
+
+`sudo bash setup.sh`用于在Ubuntu上安装JDK 11并创建独立的Hadoop实验环境。安装和数据目录分别为`/opt/hadoop-lab2`与`/var/lib/hadoop-lab2`，运行用户为`hadoop-lab`。脚本使用Apache公布的SHA-512校验Hadoop 3.4.3安装包，只格式化新建的实验NameNode目录。
+
+本次服务器上的工程位于`/var/lib/hadoop-lab2/experiment2`，再次运行可执行：
+
+```bash
+sudo -u hadoop-lab bash -c 'source /opt/hadoop-lab2/env.sh; cd /var/lib/hadoop-lab2/experiment2; bash run.sh'
+```

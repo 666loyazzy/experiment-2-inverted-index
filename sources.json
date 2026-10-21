@@ -1,0 +1,92 @@
+[
+  {
+    "document": "document01.txt",
+    "title": "Single Node Setup",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-common/SingleCluster.html",
+    "bytes": 6236,
+    "downloaded_utc": "2026-10-21T01:09:04.343420+00:00",
+    "sha256": "ded5f2f5d86a11598aaa96c89aac75eaf237fcfc22cc7b944f9efea1f8e94a0a",
+    "html_sha256": "9d10cda068f628e721104ede08125431b563e3daa916d29350de0bcf32b14f64"
+  },
+  {
+    "document": "document02.txt",
+    "title": "Cluster Setup",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-common/ClusterSetup.html",
+    "bytes": 19466,
+    "downloaded_utc": "2026-10-21T01:09:05.279124+00:00",
+    "sha256": "133945a129c0c57b2242230ef92309550f07b277fc2804cd8b9d1d7d494657ea",
+    "html_sha256": "96bd355bb997b4d66bdc552f40c2f7c0efe5f215c6de5c5905b73ab6548bb4e7"
+  },
+  {
+    "document": "document03.txt",
+    "title": "HDFS Architecture",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html",
+    "bytes": 26837,
+    "downloaded_utc": "2026-10-21T01:09:05.933934+00:00",
+    "sha256": "65b708f1c2f5172623f9e773285567b0a696600ec194e42d246a7aa9fa38ec18",
+    "html_sha256": "1af3f3e0a6105087620ffb001dbfdb9ec17533533369c96f98f57f90dfffdc67"
+  },
+  {
+    "document": "document04.txt",
+    "title": "HDFS User Guide",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html",
+    "bytes": 23950,
+    "downloaded_utc": "2026-10-21T01:09:06.582448+00:00",
+    "sha256": "8a7b29924e18660e0d9d0eb90aeeb178361ea78be43a341f0134dd4de6d389b2",
+    "html_sha256": "084f3072be7ceda81fd9e7ab4d6b7aeacc0f0d8ce1fef0844e7ef9f613d34537"
+  },
+  {
+    "document": "document05.txt",
+    "title": "File System Shell",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-common/FileSystemShell.html",
+    "bytes": 37368,
+    "downloaded_utc": "2026-10-21T01:09:07.133147+00:00",
+    "sha256": "b29247bd3ee41f1d8bad34ae43bd49c31447000d957d1a033998d28b202bd87c",
+    "html_sha256": "28de12ed3b114d99a7e24c693be6d5b2621fe5ac9202efb94f682fe07360d653"
+  },
+  {
+    "document": "document06.txt",
+    "title": "MapReduce Tutorial",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html",
+    "bytes": 56871,
+    "downloaded_utc": "2026-10-21T01:09:07.827281+00:00",
+    "sha256": "b795dca59ad163f45f7a9c5fec6a653b0630cad4549182e0dc4cdb2ad00906b7",
+    "html_sha256": "e7835cb05820e6cf02bada54dd42d68c052c6f95434b95e96d8a645b5b545cd2"
+  },
+  {
+    "document": "document07.txt",
+    "title": "YARN Architecture",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-yarn/hadoop-yarn-site/YARN.html",
+    "bytes": 3384,
+    "downloaded_utc": "2026-10-21T01:09:08.490908+00:00",
+    "sha256": "444fb68f375296776851d82f237c15cec63f74671697e61c864eda955ec75fe7",
+    "html_sha256": "440ab9c488382bd3640cd7572186bf640382e4ef809f8fa1fc4004985bb45134"
+  },
+  {
+    "document": "document08.txt",
+    "title": "Hadoop Streaming",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-streaming/HadoopStreaming.html",
+    "bytes": 26895,
+    "downloaded_utc": "2026-10-21T01:09:09.214004+00:00",
+    "sha256": "3ae8d86f29d8d857106447e09e5b0e2dc6b3b37cc566bc75eb21d31a3ce35d86",
+    "html_sha256": "bfb09e8d2e4eef40d0a1f9c008a6c09814975c29e062653a41bf869d2c70de3d"
+  },
+  {
+    "document": "document09.txt",
+    "title": "Hadoop Archives",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-archives/HadoopArchives.html",
+    "bytes": 4731,
+    "downloaded_utc": "2026-10-21T01:09:09.722899+00:00",
+    "sha256": "4b3023a2acc28cee2680071a2a3f720412809697b73d2a1565cde218d9dac397",
+    "html_sha256": "35c67494c8587947d77485fa6a936adbb0f6ee35837958a2d778e63d7cadc703"
+  },
+  {
+    "document": "document10.txt",
+    "title": "Hadoop DistCp",
+    "url": "https://hadoop.apache.org/docs/r3.4.3/hadoop-distcp/DistCp.html",
+    "bytes": 35764,
+    "downloaded_utc": "2026-10-21T01:09:10.361030+00:00",
+    "sha256": "22da851c08893a85e20a43e29c7799dff0604af8bd77a0635da25581898496b7",
+    "html_sha256": "7c754085734b016070438b54af8d13bdfab5e77a54ea91208bc0b2f214bca9f5"
+  }
+]

@@ -17,8 +17,10 @@ apt-get install -y openjdk-11-jdk-headless curl ca-certificates python3
 id hadoop-lab >/dev/null 2>&1 || useradd --system --create-home --home-dir "$state_root" --shell /usr/sbin/nologin hadoop-lab
 mkdir -p "$install_root" "$state_root"/hdfs/{name,data} "$state_root"/{logs,pids,tmp,yarn-local,yarn-logs}
 cd "$install_root"
-curl -fL --retry 2 --connect-timeout 15 https://mirrors.huaweicloud.com/apache/hadoop/common/hadoop-3.4.3/hadoop-3.4.3.tar.gz -o hadoop-3.4.3.tar.gz
-curl -fL --retry 2 --connect-timeout 15 https://mirrors.huaweicloud.com/apache/hadoop/common/hadoop-3.4.3/hadoop-3.4.3.tar.gz.sha512 -o hadoop-3.4.3.tar.gz.sha512
+if [ ! -s hadoop-3.4.3.tar.gz ]; then
+  curl -fL --retry 2 --connect-timeout 15 https://mirrors.huaweicloud.com/apache/hadoop/common/hadoop-3.4.3/hadoop-3.4.3.tar.gz -o hadoop-3.4.3.tar.gz
+fi
+printf 'e25be7e57b4d3c5bfe83895844321a21d6cf7331266d524d8983c27cf484e576c3d79b3b60d590f8cddecf16229d0e232de2491b1b61b362ee7d67072c7290e1\n' > hadoop-3.4.3.tar.gz.sha512
 python3 - <<'PY'
 import hashlib
 import pathlib

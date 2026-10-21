@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "documents": 10,
+  "stopwords": 133,
+  "tokens": 38308,
+  "removed": 13785,
+  "indexed": 24523,
+  "vocabulary": 3035,
+  "postings": 6382,
+  "per_document": [
+    {
+      "document": "document01.txt",
+      "bytes": 6236,
+      "tokens": 942,
+      "indexed": 689,
+      "vocabulary": 251
+    },
+    {
+      "document": "document02.txt",
+      "bytes": 19466,
+      "tokens": 3044,
+      "indexed": 2092,
+      "vocabulary": 562
+    },
+    {
+      "document": "document03.txt",
+      "bytes": 26837,
+      "tokens": 4401,
+      "indexed": 2593,
+      "vocabulary": 872
+    },
+    {
+      "document": "document04.txt",
+      "bytes": 23950,
+      "tokens": 3854,
+      "indexed": 2320,
+      "vocabulary": 716
+    },
+    {
+      "document": "document05.txt",
+      "bytes": 37368,
+      "tokens": 6053,
+      "indexed": 4197,
+      "vocabulary": 858
+    },
+    {
+      "document": "document06.txt",
+      "bytes": 56871,
+      "tokens": 8721,
+      "indexed": 5714,
+      "vocabulary": 1267
+    },
+    {
+      "document": "document07.txt",
+      "bytes": 3384,
+      "tokens": 494,
+      "indexed": 289,
+      "vocabulary": 177
+    },
+    {
+      "document": "document08.txt",
+      "bytes": 26895,
+      "tokens": 4204,
+      "indexed": 2697,
+      "vocabulary": 572
+    },
+    {
+      "document": "document09.txt",
+      "bytes": 4731,
+      "tokens": 840,
+      "indexed": 511,
+      "vocabulary": 152
+    },
+    {
+      "document": "document10.txt",
+      "bytes": 35764,
+      "tokens": 5755,
+      "indexed": 3421,
+      "vocabulary": 955
+    }
+  ]
+}

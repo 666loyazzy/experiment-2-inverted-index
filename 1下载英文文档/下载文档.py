@@ -53,7 +53,7 @@ class ContentParser(html.parser.HTMLParser):
             self.parts.append(data)
 
 root = pathlib.Path(__file__).resolve().parent
-destination = root / '英文文档'
+destination = root.parent / 'corpus'
 destination.mkdir(exist_ok=True)
 manifest = []
 for number, (title, path) in enumerate(PAGES, 1):

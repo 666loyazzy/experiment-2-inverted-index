@@ -18,7 +18,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>lab2</finalName>
+    <finalName>inverted-index</finalName>
     <sourceDirectory>${project.basedir}</sourceDirectory>
     <plugins>
       <plugin>
@@ -29,6 +29,13 @@
           <includes>
             <include>3构建倒排索引/**/*.java</include>
           </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <outputDirectory>${project.basedir}</outputDirectory>
         </configuration>
       </plugin>
     </plugins>

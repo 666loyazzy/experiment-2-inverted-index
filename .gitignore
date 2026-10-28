@@ -1,3 +1,4 @@
 target/
+/inverted-index.jar
 __pycache__/
 3构建倒排索引/输出/job-*.log

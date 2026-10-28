@@ -53,7 +53,7 @@ class ContentParser(html.parser.HTMLParser):
             self.parts.append(data)
 
 root = pathlib.Path(__file__).resolve().parent
-destination = root / 'corpus'
+destination = root / '英文文档'
 destination.mkdir(exist_ok=True)
 manifest = []
 for number, (title, path) in enumerate(PAGES, 1):
@@ -74,4 +74,4 @@ for number, (title, path) in enumerate(PAGES, 1):
                      'sha256': hashlib.sha256(data).hexdigest(),
                      'html_sha256': hashlib.sha256(raw).hexdigest()})
     print(name, title, len(data), flush=True)
-(root / 'sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
+(root / '文档来源.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')

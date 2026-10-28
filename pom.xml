@@ -1,26 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>cn.sdu.lab</groupId>
-  <artifactId>inverted-index</artifactId>
+  <groupId>lab</groupId>
+  <artifactId>experiment-2-inverted-index</artifactId>
   <version>1.0</version>
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <hadoop.version>3.4.3</hadoop.version>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
-      <version>3.4.3</version>
+      <version>${hadoop.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <finalName>lab2</finalName>
+    <sourceDirectory>${project.basedir}</sourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
+        <configuration>
+          <includes>
+            <include>3构建倒排索引/**/*.java</include>
+          </includes>
+        </configuration>
       </plugin>
     </plugins>
   </build>
